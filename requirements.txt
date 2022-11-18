@@ -1,7 +1,3 @@
 numpy
 streamlit
 pandas
-matplotlib.pyplot
-seaborn
-time
-datetime
