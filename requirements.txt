@@ -2,3 +2,7 @@ numpy
 streamlit
 pickle
 pandas
+matplotlib.pyplot
+seaborn
+time
+datetime
