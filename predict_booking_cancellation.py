@@ -5,7 +5,7 @@ import pandas as pd
 
 # Open the pickle file
 #file_path = r"https://github.com/DrBooma/ML_Prediction_Model/blob/main/LightGBM_Classifier"
-file_path = pd.read_picle('https://github.com/DrBooma/ML_Prediction_Model/blob/main/LightGBM_Classifier')
+file_path = pd.read_picle('https://github.com/DrBooma/ML_Prediction_Model/blob/main/LightGBM_Classifier.pkl')
 pickle_in = open(file_path, 'rb')
 classifier = pickle.load(pickle_in)
 
