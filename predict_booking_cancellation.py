@@ -2,6 +2,7 @@ import numpy as np
 import streamlit as st
 import pickle
 import pandas as pd
+import urllib
 
 # Open the pickle file
 #file_path = r"https://github.com/DrBooma/ML_Prediction_Model/blob/main/LightGBM_Classifier"
