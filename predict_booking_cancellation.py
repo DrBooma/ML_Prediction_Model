@@ -2,11 +2,15 @@ import numpy as np
 import streamlit as st
 import pickle
 import pandas as pd
-import urllib.request
+#import urllib.request
+import requests
+
 
 # Open the pickle file
+url = "https://github.com/DrBooma/ML_Prediction_Model/blob/main/LightGBM_Classifier"
+pickle_in = requests.get(url)
 #file_path = r"https://github.com/DrBooma/ML_Prediction_Model/blob/main/LightGBM_Classifier"
-pickle_in = pickle.load(urllib.request.urlopen("https://github.com/DrBooma/ML_Prediction_Model/blob/main/LightGBM_Classifier"))
+#pickle_in = pickle.load(urllib.request.urlopen("https://github.com/DrBooma/ML_Prediction_Model/blob/main/LightGBM_Classifier"))
 #file_path = r'https://github.com/DrBooma/ML_Prediction_Model/blob/main/LightGBM_Classifier.pkl'
 #pickle_in = open(file_path, 'rb')
 classifier = pickle.load(pickle_in)
