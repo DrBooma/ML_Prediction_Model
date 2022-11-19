@@ -2,12 +2,13 @@ import numpy as np
 import streamlit as st
 import pickle
 import pandas as pd
-import urllib
+import urllib.request
 
 # Open the pickle file
 #file_path = r"https://github.com/DrBooma/ML_Prediction_Model/blob/main/LightGBM_Classifier"
-file_path = r'https://github.com/DrBooma/ML_Prediction_Model/blob/main/LightGBM_Classifier.pkl'
-pickle_in = open(file_path, 'rb')
+pickle_in = pickle.load(urllib.request.urlopen("https://github.com/DrBooma/ML_Prediction_Model/blob/main/LightGBM_Classifier")
+#file_path = r'https://github.com/DrBooma/ML_Prediction_Model/blob/main/LightGBM_Classifier.pkl'
+#pickle_in = open(file_path, 'rb')
 classifier = pickle.load(pickle_in)
 
 # Predict the chances of getting the booking canceled
