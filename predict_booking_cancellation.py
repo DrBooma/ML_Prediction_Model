@@ -6,10 +6,10 @@ import urllib.request
 #import requests
 
 # Open the pickle file
-#url = "https://github.com/DrBooma/ML_Prediction_Model/blob/main/LightGBM_Classifier"
-#pickle_in = requests.get(url)
+url = "https://github.com/DrBooma/ML_Prediction_Model/blob/main/LightGBM_Classifier.pkl"
+pickle_in = requests.get(url)
 #file_path = r"https://github.com/DrBooma/ML_Prediction_Model/blob/main/LightGBM_Classifier"
-pickle_in = pickle.load(urllib.request.urlopen("https://github.com/DrBooma/ML_Prediction_Model/blob/main/LightGBM_Classifier.pkl"))
+#pickle_in = pickle.load(urllib.request.urlopen("https://github.com/DrBooma/ML_Prediction_Model/blob/main/LightGBM_Classifier.pkl"))
 #file_path = r'https://github.com/DrBooma/ML_Prediction_Model/blob/main/LightGBM_Classifier.pkl'
 #pickle_in = open(file_path, 'rb')
 classifier = pickle.load(pickle_in)
